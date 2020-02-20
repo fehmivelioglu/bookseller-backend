@@ -4,8 +4,8 @@ let bodyParser=require("body-parser");
 let cors=require("cors");
 const dotenv=require("dotenv");
 dotenv.config();
-
-let port=process.env.port;
+var http=require("http");
+var port=process.env.PORT||9090;
 let dbcon=process.env.cloud_mongodb_con;
 let apiRouter=require("./api-router");
 
