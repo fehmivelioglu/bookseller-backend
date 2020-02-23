@@ -25,6 +25,10 @@ var bookSchema =mongoose.Schema({
     categoryBy:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"category"
+    },
+    picture:{
+        type:String,
+        require:true
     }
 })
 module.exports=mongoose.model("book",bookSchema);

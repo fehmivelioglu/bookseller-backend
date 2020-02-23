@@ -107,7 +107,7 @@ exports.delete = (req, res) => {
 
 exports.saveImage=(req,res)=> {
      try{
-         res.status(200).json({status:true,url:`http://localhost:${process.env.port}/${bookFileName}`})
+         res.status(200).json({status:true,url:`https://sheltered-wave-32884.herokuapp.com/${bookFileName}`})
      }
      catch(err){
 res.status(500).send(err); 
